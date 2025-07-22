@@ -13,5 +13,5 @@ export const bio: Bio = {
     'Desarrollador MERN stack',
   ],
   description:
-    'Desarrollador web full-stack con experiencia en la pila MERN. Me dedico a construir aplicaciones modernas y centradas en la experiencia del usuario, fusionando soluciones tecnológicas sólidas con un diseño atractivo y funcional.',
+    'Desarrollador web full-stack con experiencia en la pila MERN/PERN. Diseño y desarrollo aplicaciones modernas orientadas a la experiencia del usuario, combinando soluciones tecnológicas sólidas con interfaces atractivas y funcionales.',
 };
