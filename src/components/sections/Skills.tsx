@@ -9,7 +9,7 @@ export const Skills = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, ease: 'easeInOut' }}
       viewport={{ once: true }}
-      className='min-h-screen flex flex-col justify-center py-24 md:py-0'
+      className='py-16 md:py-24'
     >
       <div className='max-w-6xl mx-auto px-6 text-center'>
         <motion.h2
@@ -33,7 +33,6 @@ export const Skills = () => {
           Descubre las competencias técnicas y herramientas que utilizo en el desarrollo
           web.
         </motion.p>
-        {/* Category container */}
         <motion.div
           className='grid grid-cols-1 md:grid-cols-3 gap-6'
           initial={{ opacity: 0 }}
@@ -50,7 +49,6 @@ export const Skills = () => {
               transition={{ duration: 0.8, delay: index * 0.5 }}
               viewport={{ once: true }}
             >
-              {/* Category title */}
               <motion.h3
                 className='text-center font-bold mb-6'
                 initial={{ scale: 0.8, opacity: 0 }}
@@ -60,7 +58,6 @@ export const Skills = () => {
               >
                 {group.category}
               </motion.h3>
-              {/* Skill icons */}
               <div className='grid grid-cols-3 gap-6 place-items-center'>
                 {group.skills.map((skill, i) => (
                   <motion.div

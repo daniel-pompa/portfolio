@@ -17,9 +17,9 @@ export const Navbar = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className='fixed top-0 left-0 w-full z-50 bg-[#0a001b]'
+      className='fixed top-0 left-0 w-full z-50 bg-[#0a001b] h-24'
     >
-      <div className='max-w-6xl mx-auto flex justify-between items-center px-6 md:px-2 py-6'>
+      <div className='max-w-6xl mx-auto flex justify-between items-center px-6 md:px-2 h-full'>
         {/* Desktop Menu */}
         <div className='hidden md:flex space-x-6'>
           {navItems.map(item => (
@@ -33,7 +33,6 @@ export const Navbar = () => {
           ))}
         </div>
         <div className='flex space-x-6'>
-          {/* Github Profile Link */}
           <motion.a
             href='https://github.com/daniel-pompa'
             target='_blank'
@@ -43,7 +42,6 @@ export const Navbar = () => {
           >
             <FaGithub className='text-3xl hover:text-orange-500 transition' />
           </motion.a>
-          {/* LinkedIn Profile Link */}
           <motion.a
             href='https://linkedin.com/in/daniel-pompa'
             target='_blank'
@@ -54,13 +52,12 @@ export const Navbar = () => {
             <FaLinkedin className='text-3xl hover:text-orange-500 transition' />
           </motion.a>
         </div>
-        {/* Hamburger Menu Icon */}
-        <a
+        <button
           className='md:hidden text-slate-50 text-2xl focus:outline-none'
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FaTimes /> : <FaBars />}
-        </a>
+        </button>
       </div>
       {/* Mobile Menu */}
       <AnimatePresence>

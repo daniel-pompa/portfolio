@@ -25,7 +25,7 @@ export const Projects = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, ease: 'easeInOut' }}
       viewport={{ once: true }}
-      className='min-h-screen flex flex-col justify-center py-24 md:py-0'
+      className='py-16 md:py-24'
     >
       <div className='max-w-6xl mx-auto px-6'>
         <motion.h2
@@ -96,7 +96,6 @@ export const Projects = () => {
           ))}
         </motion.div>
       </div>
-      {/* Modal Component */}
       {modalOpen && selectedProject && (
         <Modal project={selectedProject} onClose={closeModal} />
       )}
