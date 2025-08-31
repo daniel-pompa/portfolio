@@ -15,18 +15,10 @@ function App() {
         <Navbar />
       </header>
       <main className='flex-grow'>
-        <section id='hero' className='scroll-mt-32'>
-          <Hero />
-        </section>
-        <section id='skills' className='scroll-mt-32'>
-          <Skills />
-        </section>
-        <section id='projects' className='scroll-mt-32'>
-          <Projects />
-        </section>
-        <section id='contact' className='scroll-mt-32'>
-          <Contact />
-        </section>
+        <Hero />
+        <Skills />
+        <Projects />
+        <Contact />
       </main>
       <Footer />
       <FloatingButton />

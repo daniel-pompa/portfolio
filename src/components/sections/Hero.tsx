@@ -12,7 +12,7 @@ export const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className='min-h-screen flex flex-col justify-center items-center bg-[#0a001b] py-16 md:py-24'
+      className='min-h-screen flex flex-col justify-center items-center bg-[#0a001b] py-16 md:py-24 scroll-mt-32'
     >
       <motion.div
         initial={{ y: 50, opacity: 0 }}

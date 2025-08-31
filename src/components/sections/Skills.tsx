@@ -1,5 +1,5 @@
-import { SkillCategory, skills } from '../../constants';
 import { motion } from 'framer-motion';
+import { SkillCategory, skills } from '../../constants';
 
 export const Skills = () => {
   return (
@@ -9,7 +9,7 @@ export const Skills = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1, ease: 'easeInOut' }}
       viewport={{ once: true }}
-      className='py-16 md:py-24'
+      className='py-16 md:py-24 scroll-mt-32'
     >
       <div className='max-w-6xl mx-auto px-6 text-center'>
         <motion.h2
